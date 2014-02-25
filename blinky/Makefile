@@ -21,8 +21,8 @@ CC=$(TOOL)arm-none-eabi-gcc
 OBJCOPY=$(TOOL)arm-none-eabi-objcopy
 
 CFLAGS  = -g -O2 -Wall -Tstm32_flash.ld 
-CFLAGS += -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork
-CFLAGS += -mfloat-abi=hard -mfpu=fpv4-sp-d16
+CFLAGS += -mlittle-endian -mthumb -mcpu=cortex-m3 -mthumb-interwork
+CFLAGS += -mfloat-abi=soft
 
 CFLAGS += -I.
 
